@@ -239,6 +239,23 @@
     .reveal{ opacity:1; transform:none; transition:none; }
     .scrollcue .ln::after{ animation:none; }
   }
+
+  /* WRITING */
+  .writing-h{ margin:0 0 6px; font-family:"Inter Tight", sans-serif; font-weight:700; font-size:clamp(26px,4.2vw,44px); letter-spacing:-0.02em; }
+  .books{ display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:28px; }
+  .book{ display:flex; flex-direction:column; border:1px solid var(--line); background:var(--paper); }
+  .book-cover{ aspect-ratio:4/3; background:var(--ink); color:#fff; padding:18px 20px; display:flex; flex-direction:column; justify-content:space-between; }
+  .bc-imprint{ font-family:"JetBrains Mono", monospace; font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,.6); }
+  .bc-title{ font-family:"Inter Tight", sans-serif; font-weight:700; font-size:30px; line-height:1.02; letter-spacing:-0.02em; }
+  .bc-meta{ font-family:"JetBrains Mono", monospace; font-size:11px; letter-spacing:0.08em; color:rgba(255,255,255,.75); border-top:1px solid rgba(255,255,255,.25); padding-top:10px; }
+  .book-body{ padding:18px 20px 16px; display:flex; flex-direction:column; flex:1; }
+  .book-desc{ margin:0 0 10px; font-size:15px; line-height:1.55; color:var(--ink-soft); }
+  .book-tie{ margin:0 0 16px; font-size:13px; color:var(--mute); font-style:italic; }
+  .book-foot{ margin-top:auto; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); padding-top:12px; }
+  .book-pp{ font-family:"JetBrains Mono", monospace; font-size:11.5px; color:var(--mute); letter-spacing:0.04em; }
+  .book-links{ display:flex; gap:14px; }
+  .book-links a{ font-size:13.5px; font-weight:600; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--ink); }
+  .book-links a:hover{ opacity:.65; }
 </style>
 </head>
 <body>
@@ -260,6 +277,7 @@
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#project">Projects</a>
+      <a href="#writing">Writing</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
@@ -429,6 +447,85 @@
             </div>
             <figcaption>Repair walkthrough &mdash; narrated, 2:46</figcaption>
           </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="writing">
+      <div class="wrap">
+        <div class="kicker">Writing</div>
+        <h2 class="writing-h">Seven books, 2026</h2>
+        <p class="proj-lead">I planned and outlined each book, then wrote them with ChatGPT and Claude, as an experiment in what one person and AI can make together. Most are business simulations: you sit in the founder&rsquo;s chair and make the decisions. The Gate and The Ledger are volumes two and three of a series I&rsquo;m still writing.</p>
+        <div class="proj-stats">
+          <div class="proj-stat"><b>7</b><span>Books</span></div>
+          <div class="proj-stat"><b>502</b><span>Pages</span></div>
+          <div class="proj-stat"><b>~147K</b><span>Words</span></div>
+          <div class="proj-stat"><b>EN / ES</b><span>The Long Argument</span></div>
+        </div>
+        <div class="books">
+          <article class="book reveal">
+            <div class="book-cover"><span class="bc-imprint">Hands&middot;On Federation Press</span><span class="bc-title">Ten Days</span><span class="bc-meta">Business simulation</span></div>
+            <div class="book-body">
+              <p class="book-desc">A cleaning-company owner with 14 employees and a shoebox of receipts learns to run the business without her hands on everything.</p>
+              <p class="book-tie">The MKG template, told as a story.</p>
+              <div class="book-foot"><span class="book-pp">51 pages</span>
+                <span class="book-links"><a href="books/ten-days.pdf" target="_blank" rel="noopener">Read</a><a href="books/ten-days.pdf" download>Download</a></span></div>
+            </div>
+          </article>
+          <article class="book reveal">
+            <div class="book-cover"><span class="bc-imprint">Hands&middot;On Federation Press</span><span class="bc-title">Localhost</span><span class="bc-meta">Business simulation + web course</span></div>
+            <div class="book-body">
+              <p class="book-desc">A teenager on a library computer learns to code and gets his neighborhood's businesses online, together. The code in it runs.</p>
+              <p class="book-tie">The client websites, from the ground up.</p>
+              <div class="book-foot"><span class="book-pp">75 pages</span>
+                <span class="book-links"><a href="books/localhost.pdf" target="_blank" rel="noopener">Read</a><a href="books/localhost.pdf" download>Download</a></span></div>
+            </div>
+          </article>
+          <article class="book reveal">
+            <div class="book-cover"><span class="bc-imprint">Hands&middot;On Federation Press</span><span class="bc-title">Two Hundred</span><span class="bc-meta">Business simulation</span></div>
+            <div class="book-body">
+              <p class="book-desc">Laid off with $212 and some HTML, a 24-year-old builds toward a million, using AI as a multiplier, not a miracle.</p>
+              <p class="book-tie">Building with AI, dollar by dollar.</p>
+              <div class="book-foot"><span class="book-pp">37 pages</span>
+                <span class="book-links"><a href="books/two-hundred.pdf" target="_blank" rel="noopener">Read</a><a href="books/two-hundred.pdf" download>Download</a></span></div>
+            </div>
+          </article>
+          <article class="book reveal">
+            <div class="book-cover"><span class="bc-imprint">Hands&middot;On Federation Press</span><span class="bc-title">Living Water</span><span class="bc-meta">Business simulation</span></div>
+            <div class="book-body">
+              <p class="book-desc">A juice truck grows into a nonprofit market in a west Charlotte food desert: permits, cold chain, freight and community.</p>
+              <p class="book-tie">Operations from the street up.</p>
+              <div class="book-foot"><span class="book-pp">60 pages</span>
+                <span class="book-links"><a href="books/living-water.pdf" target="_blank" rel="noopener">Read</a><a href="books/living-water.pdf" download>Download</a></span></div>
+            </div>
+          </article>
+          <article class="book reveal">
+            <div class="book-cover"><span class="bc-imprint">Hands&middot;On Federation Press</span><span class="bc-title">The Gate</span><span class="bc-meta">Series · Volume 2</span></div>
+            <div class="book-body">
+              <p class="book-desc">The strongest honest defense of the middleman, cross-examining volume one point by point.</p>
+              <p class="book-tie">Game theory and business design.</p>
+              <div class="book-foot"><span class="book-pp">67 pages</span>
+                <span class="book-links"><a href="books/the-gate.pdf" target="_blank" rel="noopener">Read</a><a href="books/the-gate.pdf" download>Download</a></span></div>
+            </div>
+          </article>
+          <article class="book reveal">
+            <div class="book-cover"><span class="bc-imprint">Hands&middot;On Federation Press</span><span class="bc-title">The Ledger</span><span class="bc-meta">Series · Volume 3</span></div>
+            <div class="book-body">
+              <p class="book-desc">A founding simulation: build the company that survives both arguments, one decision at a time.</p>
+              <p class="book-tie">Turning an argument into a business model.</p>
+              <div class="book-foot"><span class="book-pp">61 pages</span>
+                <span class="book-links"><a href="books/the-ledger.pdf" target="_blank" rel="noopener">Read</a><a href="books/the-ledger.pdf" download>Download</a></span></div>
+            </div>
+          </article>
+          <article class="book reveal">
+            <div class="book-cover"><span class="bc-imprint">Hands&middot;On Federation Press</span><span class="bc-title">The Long Argument</span><span class="bc-meta">Philosophy · English / Spanish</span></div>
+            <div class="book-body">
+              <p class="book-desc">2,600 years of philosophy in plain words, from the first “why?” to the questions still open today.</p>
+              <p class="book-tie">The thinking under everything else.</p>
+              <div class="book-foot"><span class="book-pp">151 pages</span>
+                <span class="book-links"><a href="books/the-long-argument.pdf" target="_blank" rel="noopener">Read</a><a href="books/the-long-argument.pdf" download>Download</a></span></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
